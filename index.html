@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Maxi</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fas fa-code me-2"></i>Mi Portafolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Acerca de</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white text-center vh-100 d-flex flex-column justify-content-center align-items-center">
+    <h1 class="display-3">Hola, soy Maxi</h1>
+    <p class="lead">Estudiante de Programación | Desarrollador Web</p>
+    <a href="#projects" class="btn btn-light btn-lg mt-3">Ver mis proyectos</a>
+  </header>
+
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+          <img src="images/perfil.jpeg" class="rounded-circle img-fluid" alt="Foto de Perfil" style="width: 200px; height: 200px; object-fit: cover;">
+        </div>
+        <div class="col-md-8">
+          <h2>Acerca de mí</h2>
+          <p>Actualmente soy estudiante de la Tecnicatura en Desarrollo de Software, complementando mi formación previa como Técnico Profesional y Personal en Informática. Esta combinación me brinda un conocimiento integral del mundo de la computación junto con las habilidades más actuales en programación.</p>
+          <p>Mi formación técnica en informática me dio una base sólida en el funcionamiento de las computadoras y sistemas informáticos, mientras que mis estudios actuales en desarrollo de software me permiten crear soluciones tecnológicas efectivas. Me apasiona especialmente el desarrollo web y trabajo con tecnologías como HTML, CSS, JavaScript y Java.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Proyectos</h2>
+      <div class="row">
+        
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/calculadora.png" class="card-img-top" alt="Calculadora" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Calculadora Web</h5>
+              <p class="card-text">Una calculadora interactiva desarrollada con HTML, CSS y JavaScript que permite realizar operaciones matemáticas básicas.</p>
+              <a href="proyectos/calculadora/index.html" class="btn btn-primary mt-auto">
+                <i class="fas fa-eye me-1"></i>Ver Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/lista.jpg" class="card-img-top" alt="Lista de Tareas" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Lista de Tareas</h5>
+              <p class="card-text">Aplicación para gestionar tareas diarias que permite agregar, marcar como completadas y eliminar tareas.</p>
+              <a href="proyectos/to-do-list/index.html" class="btn btn-primary mt-auto">
+                <i class="fas fa-eye me-1"></i>Ver Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/festival de la ciudad.jpg" class="card-img-top" alt="Festival Sonidos de la Ciudad" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Festival "Sonidos de la Ciudad"</h5>
+              <p class="card-text">Sitio web desarrollado para un festival musical que incluye secciones de artistas, cronograma, entradas, ubicación y contacto.</p>
+              <a href="#" class="btn btn-primary mt-auto"> <i class="fas fa-eye me-1"></i>Ver Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contacto</h2>
+      <form class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo Electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="ejemplo@email.com">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Escribe tu mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-2">&copy; 2025 Maxi | Todos los derechos reservados</p>
+      <div>
+        <a href="https://github.com/corodev" class="text-white mx-2 fs-4"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/maxi-coronel-170843386/" class="text-white mx-2 fs-4"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
